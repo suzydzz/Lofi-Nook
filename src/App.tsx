@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 // import { FC, useEffect, useState } from "react";
-import "./../index.css";
+import "./../style.css";
 import './App.css'
 
 function App() {
