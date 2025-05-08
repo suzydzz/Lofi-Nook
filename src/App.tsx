@@ -1,9 +1,25 @@
 // import { useState } from 'react'
 // import { FC, useEffect, useState } from "react";
-import "../style.css";
-import './App.css'
+import '../style.css';
+import './App.css';
+
+import Card from './components/card/Card';
 
 function App() {
+  const cards = [
+    {
+      id: 1,
+    },
+    {
+      id: 2,
+    },
+    {
+      id: 3,
+    },
+    {
+      id: 4,
+    }
+  ];
 
   return (
     <>
@@ -19,10 +35,7 @@ function App() {
           </section>
           <section>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              { cards.map((card) => <Card card={ card } key={ card.id } />)}
             </ul>
           </section>
         </section>
