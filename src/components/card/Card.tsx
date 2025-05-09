@@ -1,17 +1,11 @@
-import './style.css';
+import "./style.css";
 
-interface Props {
-  card: {
-    id: number;
-  };
-}
 
-const Card = ({ card }: Props) => {
+const Card = () => {
   return (
-    <li className="card">
-      Card {card.id}
+  <li className="card">
     </li>
-  )
-}
+    );
+};
 
 export default Card;

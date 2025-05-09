@@ -6,21 +6,6 @@ import './App.css';
 import Card from './components/card/Card';
 
 function App() {
-  const cards = [
-    {
-      id: 1,
-    },
-    {
-      id: 2,
-    },
-    {
-      id: 3,
-    },
-    {
-      id: 4,
-    }
-  ];
-
   return (
     <>
       <div className="banner"></div>
@@ -29,13 +14,18 @@ function App() {
         <section className="flex">
           <section>
             <img
-              src="https://i.pinimg.com/736x/53/97/0a/53970ac1cf316495aee42394cd38d020.jpg"
+              src="https://wallpapers-clan.com/wp-content/uploads/2023/09/beautiful-japan-aesthetic-wallpaper.jpg"
               alt="pic"
             />
           </section>
           <section>
             <ul>
-              { cards.map((card) => <Card card={ card } key={ card.id } />)}
+              <Card key={1} />
+              <Card key={2} />
+            </ul>
+            <ul>
+              <Card key={3} />
+              <Card key={4} />
             </ul>
           </section>
         </section>

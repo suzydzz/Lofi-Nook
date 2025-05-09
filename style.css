@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -23,16 +27,17 @@ h1 {
 
 ul{
   list-style-type: none;
-    display: flex;
+  gap: 10px;
+  display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width:50%;
+    /* display: grid; grid-template-columns: repeat(2, 1fr) */
 }
 
 .flex{
   display: flex;
-  justify-content:center;
+  justify-content: flex-start;
   align-items: center;
 }
 
