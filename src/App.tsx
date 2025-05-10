@@ -1,9 +1,9 @@
 // import { useState } from 'react'
 // import { FC, useEffect, useState } from "react";
-import '../style.css';
-import './App.css';
+import "../style.css";
+import "./App.css";
 
-import Card from './components/card/Card';
+import Card from "./components/card/Card";
 
 function App() {
   return (
@@ -32,6 +32,6 @@ function App() {
       </div>
     </>
   );
-};
+}
 
-export default App
+export default App;
