@@ -101,7 +101,8 @@ select{
   color: rgb(108, 107, 107);
 }
 
-.task-header{
+.task-header{ 
+  
   display: flex;
     align-items: center;
     justify-content: flex-start;
