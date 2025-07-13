@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import "./style.css";
 import type { Category, Priority, Status, TaskItem } from "../../types/taskTypes";
 
