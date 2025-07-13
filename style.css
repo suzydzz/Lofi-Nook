@@ -27,21 +27,11 @@ h1 {
   align-items: center;
 }
 
-ul {
-  list-style-type: none;
-  gap: 10px;
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  /* flex-wrap: wrap; */
-
-  /* display: grid; grid-template-columns: repeat(2, 1fr) */
-}
 
 .flex {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1500px;
   width: 100%;
 }

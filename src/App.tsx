@@ -2,8 +2,9 @@
 // import { FC, useEffect, useState } from "react";
 import "../style.css";
 import "./App.css";
+import TaskManager from "./components/TaskManager/TaskManager";
 
-import Card from "./components/card/Card";
+
 
 function App() {
   return (
@@ -14,19 +15,14 @@ function App() {
         <section className="flex">
           <section>
             <img
-              src="https://wallpapers-clan.com/wp-content/uploads/2023/09/beautiful-japan-aesthetic-wallpaper.jpg"
+              src="https://avatars.mds.yandex.net/i?id=df838e195ce446f7c21f7c1780a2b25a_l-5691454-images-thumbs&n=13"
               alt="pic"
             />
           </section>
           <section>
-            <ul>
-              <Card key={1} />
-              <Card key={2} />
-            </ul>
-            <ul>
-              <Card key={3} />
-              <Card key={4} />
-            </ul>
+            <div>
+              <TaskManager />
+            </div>
           </section>
         </section>
       </div>
