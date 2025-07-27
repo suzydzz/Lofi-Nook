@@ -1,0 +1,54 @@
+/* Упрощенная мобильная адаптация */
+@media (max-width: 768px) {
+  .task-manager-mobile {
+    padding: 10px;
+    
+    .position {
+      flex-direction: column;
+      gap: 10px;
+      
+      .size, select, textarea {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      
+      .textArea textarea {
+        min-height: 100px;
+      }
+    }
+    
+    .tasks-list {
+      margin-top: 15px;
+      
+      .gap {
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 10px;
+        
+        button {
+          padding: 5px 10px;
+          font-size: 14px;
+        }
+      }
+      
+      .task-item {
+        padding: 10px;
+        margin-bottom: 10px;
+        
+        .task-header {
+          flex-direction: column;
+          align-items: flex-start;
+          
+          button {
+            margin: 5px 0 0 0;
+          }
+        }
+      }
+    }
+    
+    .modal .styles {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+}
