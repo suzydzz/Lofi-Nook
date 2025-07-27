@@ -3,7 +3,9 @@
   flex-direction: column;          
   justify-content: center;
 }
+
 .card {
+  
   border-radius: 20px;
   background: rgba(192, 6, 123, 0.319);
   max-height: 250px;
