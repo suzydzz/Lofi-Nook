@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import type {
   Category,
@@ -18,6 +18,19 @@ const TaskManager = () => {
   const [filter, setFilter] = useState<"All" | Status>("All");
 
   const [editingTask, setEditingTask] = useState<TaskItem | null>(null);
+
+  useEffect(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    if (savedTasks) {
+      const savedTasksObj = JSON.parse(savedTasks);
+      setTasks(savedTasksObj);
+    }
+  }, []);
+
+  useEffect(() => {
+    const savedTasks = JSON.stringify (tasks);
+    localStorage.setItem("tasks", savedTasks)
+  }, [tasks]);
 
   const addTask = () => {
     if (title.trim() === "") return;
@@ -302,7 +315,6 @@ const TaskManager = () => {
           </div>
         )}
       </div>
-      
     </div>
   );
 };
