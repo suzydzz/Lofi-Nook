@@ -52,6 +52,12 @@ const TaskManager = () => {
     setPriority("Medium");
   };
 
+  const deleteTasks = (id: number) => {
+    if(window.confirm("Are you sure you want to delete this task?")){
+      setTasks(tasks.filter(task=>task.id !== id))
+    }
+  }
+
   const handleStatusChange = (id: number, newStatus: Status) => {
     setTasks(
       tasks.map((task) =>
@@ -204,6 +210,9 @@ const TaskManager = () => {
                       style={{ marginLeft: "10px", padding: "2px 5px" }}
                     >
                       Edit
+                    </button>
+                    <button className="delete" onClick={()=> deleteTasks(task.id)}>
+                      Delete
                     </button>
                   </div>
                   {task.description && <p>{task.description}</p>}
